@@ -66,3 +66,7 @@ npm run test:e2e
 ```sh
 npm run lint
 ```
+
+npm install
+npm install bootstrap
+npm install bootstrap-vue

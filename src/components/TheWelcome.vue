@@ -17,6 +17,12 @@ import SupportIcon from './icons/IconSupport.vue'
     Vue’s
     <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
     provides you with all information you need to get started.
+    <div>
+  <b-button>Button</b-button>
+  <b-button variant="danger">Button</b-button>
+  <b-button variant="success">Button</b-button>
+  <b-button variant="outline-primary">Button</b-button>
+</div>
   </WelcomeItem>
 
   <WelcomeItem>
