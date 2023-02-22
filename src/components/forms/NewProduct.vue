@@ -6,10 +6,10 @@
     const description = ref("");
 
     const addNewProduct = () : void => {
-        newProduct(name.value,price.value,description.value).then() => {
+        newProduct(name.value,price.value,description.value).then( () => {
             
-        }
-    }
+        });
+    };
 </script>
 <template>
     <form>
