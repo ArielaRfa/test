@@ -1,12 +1,18 @@
 <script setup lang="ts">
     import { ref } from "vue";
-    import NewProduct from './NewProduct.vue' 
+    import * as NewProduct from './NewProduct.vue'
+    import {listProduct} from "../../services/product.service"
+    import {onMounted} from 'vue'
     const showList = ref(true);
     const showNew = ref(false);
     const onNew = () : void => {
-        showList.value = false;
+        showList.value = true;
         showNew.value = true;
+        
     }
+    onMounted(()=>{
+        listProduct().then(result=>{(console.log("tony ny resultat",result))});
+    })
 </script>
 <template>
     <div class="container-fluid" v-if="showList">
